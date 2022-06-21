@@ -1,0 +1,5 @@
+.product-card_disabled .ant-card,
+.product-card_disabled .ant-card-meta-title,
+.product-card_disabled .ant-typography.ant-typography-secondary {
+  color: rgba(0, 0, 0, 0.24);
+}

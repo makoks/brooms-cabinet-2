@@ -7,8 +7,7 @@ import {
 import { LoginPage, RegisterPage, RubricsPage, NewsPage, EventsPage, IdeasPage, ProfilePage, VacationPage, ShopPage } from './pages';
 import { Layout } from './components';
 import 'antd/dist/antd.css';
-// import './App.css';
-// import your route components too
+import './App.css';
 
 function App() {
   return (

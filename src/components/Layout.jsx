@@ -6,7 +6,7 @@ export const Layout = () => (
   <AntdLayout style={{ minHeight: '100vh' }}>
     <AntdLayout.Header style={{ color: '#fff' }}>Личный кабинет</AntdLayout.Header>
     <AntdLayout>
-      <AntdLayout.Sider>
+      <AntdLayout.Sider style={{ boxShadow: '0px 2px 8px rgba(0, 0, 0, 0.15)' }}>
         <Menu mode="inline" style={{ height: '100%', borderRight: 0 }} items={[
           { label: <Link to="/">Рубрики</Link>, key: 'rubrics', children: [
             { label: <Link to="news">Новости</Link>, key: 'news' },
@@ -18,9 +18,7 @@ export const Layout = () => (
           { label: <Link to="shop">Магазин</Link>, key: 'shop' },
         ]} />
       </AntdLayout.Sider>
-      <AntdLayout.Content>
-        <Outlet />
-      </AntdLayout.Content>
+      <Outlet />
     </AntdLayout>
   </AntdLayout>
 );
