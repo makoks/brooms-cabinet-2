@@ -4,7 +4,7 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import { LoginPage, RegisterPage, RubricsPage, NewsPage, EventsPage, IdeasPage, ProfilePage, VacationPage, ShopPage } from './pages';
+import { LoginPage, RubricsPage, NewsPage, EventsPage, IdeasPage, ProfilePage, VacationPage, ShopPage } from './pages';
 import { Layout } from './components';
 import 'antd/dist/antd.css';
 import './App.css';
@@ -14,7 +14,6 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="login" element={<LoginPage />} />
-        <Route path="register" element={<RegisterPage />} />
         <Route element={<Layout />}>
           <Route path="/" element={<RubricsPage />} />
           <Route path="news" element={<NewsPage />} />

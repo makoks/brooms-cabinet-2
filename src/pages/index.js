@@ -1,5 +1,4 @@
 export { LoginPage } from "./LoginPage";
-export { RegisterPage } from "./RegisterPage";
 export { RubricsPage } from "./RubricsPage";
 export { NewsPage } from "./NewsPage";
 export { EventsPage } from "./EventsPage";
