@@ -81,7 +81,7 @@ export const API = {
         title: "Alipay",
         description:
           "Nibh fringilla ut morbi amet, fusce amet nulla ut tristique.",
-        publishedAt: new Date(),
+        publishedAt: new Date() - 60 * 60 * 1000,
         authors: [{ avatarUrl: "https://picsum.photos/40?random=1" }],
       },
       {
@@ -121,7 +121,7 @@ export const API = {
         title: "Alipay",
         description:
           "Nibh fringilla ut morbi amet, fusce amet nulla ut tristique.",
-        publishedAt: new Date(),
+        publishedAt: new Date() - 24 * 60 * 60 * 1000,
         authors: [
           { avatarUrl: "https://picsum.photos/40?random=1" },
           { avatarUrl: "https://picsum.photos/40?random=2" },
@@ -140,6 +140,86 @@ export const API = {
         id: '7',
         imageUrl: "https://picsum.photos/300/160?random=7",
         title: "Alipay",
+        description:
+          "Nibh fringilla ut morbi amet, fusce amet nulla ut tristique.",
+        publishedAt: new Date(),
+        authors: [
+          { avatarUrl: "https://picsum.photos/40?random=1" },
+          { avatarUrl: "https://picsum.photos/40?random=2" },
+          { avatarUrl: "https://picsum.photos/40?random=3" },
+          { avatarUrl: "https://picsum.photos/40?random=4" },
+        ],
+      },
+    ];
+  },
+
+  news: async () => {
+    return await [
+      {
+        id: '1',
+        imageUrl: "https://picsum.photos/300/160?random=7",
+        title: "New 1",
+        description:
+          "Nibh fringilla ut morbi amet, fusce amet nulla ut tristique.",
+        publishedAt: new Date() - 60 * 60 * 1000,
+        authors: [{ avatarUrl: "https://picsum.photos/40?random=1" }],
+      },
+      {
+        id: '2',
+        imageUrl: "https://picsum.photos/300/160?random=6",
+        title: "New 2",
+        description:
+          "Nibh fringilla ut morbi amet, fusce amet nulla ut tristique.",
+        publishedAt: new Date(),
+        authors: [
+          { avatarUrl: "https://picsum.photos/40?random=1" },
+          { avatarUrl: "https://picsum.photos/40?random=2" },
+          { avatarUrl: "https://picsum.photos/40?random=3" },
+        ],
+      },
+      {
+        id: '3',
+        imageUrl: "https://picsum.photos/300/160?random=5",
+        title: "New 3",
+        description:
+          "Nibh fringilla ut morbi amet, fusce amet nulla ut tristique.",
+        publishedAt: new Date(),
+        authors: [{ avatarUrl: "https://picsum.photos/40?random=1" }],
+      },
+      {
+        id: '4',
+        imageUrl: "https://picsum.photos/300/160?random=4",
+        title: "New 4",
+        description:
+          "Nibh fringilla ut morbi amet, fusce amet nulla ut tristique.",
+        publishedAt: new Date(),
+        authors: [{ avatarUrl: "https://picsum.photos/40?random=1" }],
+      },
+      {
+        id: '5',
+        imageUrl: "https://picsum.photos/300/160?random=3",
+        title: "New 5",
+        description:
+          "Nibh fringilla ut morbi amet, fusce amet nulla ut tristique.",
+        publishedAt: new Date() - 24 * 60 * 60 * 1000,
+        authors: [
+          { avatarUrl: "https://picsum.photos/40?random=1" },
+          { avatarUrl: "https://picsum.photos/40?random=2" },
+        ],
+      },
+      {
+        id: '6',
+        imageUrl: "https://picsum.photos/300/160?random=2",
+        title: "New 6",
+        description:
+          "Nibh fringilla ut morbi amet, fusce amet nulla ut tristique.",
+        publishedAt: new Date(),
+        authors: [{ avatarUrl: "https://picsum.photos/40?random=1" }],
+      },
+      {
+        id: '7',
+        imageUrl: "https://picsum.photos/300/160?random=1",
+        title: "New 7",
         description:
           "Nibh fringilla ut morbi amet, fusce amet nulla ut tristique.",
         publishedAt: new Date(),
