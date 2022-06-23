@@ -39,8 +39,8 @@ export const LoginForm = () => (
       </Form.Item>
 
       <a
-        href="https://discord.com/api/oauth2/authorize?client_id=988933971977076777&redirect_uri=https%3A%2F%2Fbrooms-cabinet-2.netlify.app%2F&response_type=token&scope=identify"
-        // href="https://discord.com/api/oauth2/authorize?client_id=988933971977076777&redirect_uri=http%3A%2F%2Flocalhost%3A3000&response_type=token&scope=identify"
+        href="https://discord.com/api/oauth2/authorize?client_id=988933971977076777&redirect_uri=https%3A%2F%2Fbrooms-cabinet-2.netlify.app%2F&response_type=token&scope=identify%20email"
+        // href="https://discord.com/api/oauth2/authorize?client_id=988933971977076777&redirect_uri=http%3A%2F%2Flocalhost%3A3000&response_type=token&scope=identify%20email"
         style={{ float: 'right' }}
       >
         Забыли пароль?
