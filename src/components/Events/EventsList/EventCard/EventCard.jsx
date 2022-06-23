@@ -1,7 +1,11 @@
 import React from "react";
+import ru from "javascript-time-ago/locale/ru";
+import TimeAgo from "javascript-time-ago";
 import { Card, Avatar } from "antd";
 
 const { Meta } = Card;
+TimeAgo.addDefaultLocale(ru);
+const timeAgo = new TimeAgo("ru-RU");
 
 export const EventCard = ({
   imageUrl,
@@ -18,8 +22,14 @@ export const EventCard = ({
     >
       <Meta title={title} />
       <p>{description}</p>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: 'center' }}>
-        <Meta description={publishedAt.toLocaleDateString("ru-RU")} />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <Meta description={timeAgo.format(publishedAt)} />
         <Avatar.Group maxCount={3}>
           {authors.map((author, index) => (
             <Avatar src={author.avatarUrl} key={index} />
