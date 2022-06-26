@@ -4,6 +4,8 @@ import {ContentHeader} from "../components";
 import ProfileInfo from "../components/Profile/ProfileInfo/ProfileInfo";
 import {useEffect, useState} from "react";
 import {API} from "../API";
+import MainInfo from "../components/Profile/MainInfo/MainInfo";
+import Loader from "../components/common/Loader";
 
 const tags = ['Отдел аналитики', 'Системный аналитик', 'Ведущий эксперт', 'ДСУД ПоИ']
 
@@ -22,11 +24,14 @@ export const ProfilePage = () => {
 	return (
 		<Layout>
 			<ContentHeader title='Профиль' paddingBottom={true}>
-				{loading
-				? <Skeleton avatar active paragraph={{ rows: 1 }} />
-				: <ProfileInfo avatar={profile.avatarUrl} name={profile.name} tags={tags}/>
-				}
+				<Skeleton avatar active paragraph={{rows: 1}} loading={loading}>
+					<ProfileInfo avatar={profile?.avatarUrl} name={profile?.name} tags={tags}/>
+				</Skeleton>
 			</ContentHeader>
+			{loading
+				? <Loader/>
+				: <MainInfo projectsAndGroups={profile.projectsAndGroups}/>
+			}
 		</Layout>
 	)
 };
