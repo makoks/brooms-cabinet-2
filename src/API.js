@@ -1,11 +1,15 @@
 export const API = {
-  user: async () => {
-    return await {
-      avatarUrl:
-        "https://robohash.org/reruminciduntasperiores.png?size=72x72&set=set1",
-      name: "Проданик Анастасия Александровна",
-      notificationCount: 11,
-    };
+  user: () => {
+    return new Promise((resolve) => {
+      setInterval(() => {
+        resolve({
+          avatarUrl:
+              "https://robohash.org/reruminciduntasperiores.png?size=72x72&set=set1",
+                  name: "Проданик Анастасия Александровна",
+              notificationCount: 11,
+        })
+      }, 2000)
+    })
   },
 
   shop: async () => {
