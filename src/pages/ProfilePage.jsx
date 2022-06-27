@@ -6,7 +6,10 @@ import {useEffect, useState} from "react";
 import {API} from "../API";
 import MainInfo from "../components/Profile/MainInfo/MainInfo";
 import Loader from "../components/common/Loader";
+import TimeAgo from "javascript-time-ago";
+import ru from "javascript-time-ago/locale/ru";
 
+TimeAgo.addDefaultLocale(ru);
 const tags = ['Отдел аналитики', 'Системный аналитик', 'Ведущий эксперт', 'ДСУД ПоИ']
 
 export const ProfilePage = () => {
@@ -30,7 +33,11 @@ export const ProfilePage = () => {
 			</ContentHeader>
 			{loading
 				? <Loader/>
-				: <MainInfo projectsAndGroups={profile.projectsAndGroups}/>
+				: <MainInfo
+					projectsAndGroups={profile.projectsAndGroups}
+					contacts={profile.contacts}
+					notifications={profile.notifications}
+				/>
 			}
 		</Layout>
 	)

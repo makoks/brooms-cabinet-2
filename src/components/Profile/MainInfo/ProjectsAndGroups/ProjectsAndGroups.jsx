@@ -1,7 +1,6 @@
 import React from 'react'
 import {Card} from "antd";
 import ProjectCard from "./ProjectCard";
-import './style.css'
 
 
 const ProjectsAndGroups = ({projectsAndGroups}) => {
