@@ -1,0 +1,54 @@
+.vacation__table .ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table {
+  border: none;
+}
+
+.vacation__table .ant-table-thead {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 3;
+  position: relative;
+}
+
+.vacation__table tr > th.ant-table-cell,
+.vacation__table tr > td.ant-table-cell {
+  padding: 0;
+  text-align: center;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.68);
+  background-color: #fff;
+}
+
+.vacation__table tr > td.ant-table-cell:first-child {
+  padding-left: 6px;
+  text-align: start;
+}
+
+.vacation__table tr > th.ant-table-cell {
+  border: none !important;
+}
+
+.vacation__table tr > th.ant-table-cell::before {
+  content: none !important;
+}
+
+.vacation__table .ant-table-thead tr:nth-child(2) .ant-table-cell:not(.weekend) {
+  color: #18baff;
+}
+
+.vacation__table tr > th.ant-table-cell.weekend,
+.vacation__table tr > td.ant-table-cell.weekend {
+  background-color: #f9f0ff;
+  color: #7b61ff;
+}
+
+.vacation__table .ant-table-tbody > tr.ant-table-row:hover > td,
+.vacation__table .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+  background: none;
+}
+.vacation__table .ant-table-tbody > tr.ant-table-row:hover > td.weekend,
+.vacation__table .ant-table-tbody > tr > td.ant-table-cell-row-hover.wekend {
+  background-color: #f9f0ff;
+}
+.vacation__table .ant-table-tbody > tr.ant-table-row:hover > td:first-child,
+.vacation__table .ant-table-tbody > tr > td.ant-table-cell-row-hover:first-child {
+  background-color: #fff;
+}
