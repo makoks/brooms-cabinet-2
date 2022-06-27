@@ -112,7 +112,7 @@ export const VacationPage = () => {
         || user.position.toLowerCase().includes(t)
         || user.projects.some(project => project.title.toLowerCase().includes(t) || project?.tagName.toLowerCase().includes(t))
     })))
-  }, [tags]);
+  }, [tags, users]);
 
   return (
     <Layout>
