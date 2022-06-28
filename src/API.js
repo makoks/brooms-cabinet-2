@@ -72,6 +72,15 @@ export const API = {
 							content: 'Ясность нашей позиции очевидна: сложившаяся структура организации говорит о возможностях своевременного выполнения сверхзадачи.',
 							date: new Date('12-12-2022')
 						},
+					],
+					interests: ['Плавание', 'Комиксы', 'Баскетбол', 'Кино', 'React', 'JS'],
+					team: [
+						{avatarUrl: 'https://picsum.photos/40?random=1', name: 'Башканков А'},
+						{avatarUrl: 'https://picsum.photos/40?random=2', name: 'Колесникова О'},
+						{avatarUrl: 'https://picsum.photos/40?random=3', name: 'Никитина М'},
+						{avatarUrl: 'https://picsum.photos/40?random=4', name: 'Аносов А'},
+						{avatarUrl: 'https://picsum.photos/40?random=5', name: 'Демидов Я'},
+						{avatarUrl: 'https://picsum.photos/40?random=6', name: 'Козлова Н'},
 					]
 				})
 			}, 2000)
