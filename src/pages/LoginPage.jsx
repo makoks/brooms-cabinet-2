@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Space, Typography, Tabs } from 'antd';
 import { LoginForm, RegisterForm } from '../components';
 import { Logo } from '../images';
+import 'antd/dist/antd.css';
 
 export const LoginPage = () => {
   const [activeTab, setActiveTab] = useState('auth');

@@ -34,7 +34,12 @@ export const Layout = () => {
   return (
     <div className={isDarkTheme ? 'dark-theme' : 'light-theme'}>
       <AntdLayout style={{ minHeight: '100vh' }}>
-        <AntdLayout.Header style={{ color: '#fff', display: 'flex', justifyContent: 'space-between' }}>
+        <AntdLayout.Header style={{
+          color: '#fff',
+          display: 'flex',
+          justifyContent: 'space-between',
+          borderBottom: '1px solid #424242'
+        }}>
           <Space size="middle">
             <img src={Logo} alt="logo" width={32} height={24} />
             <Typography.Text strong style={{ color: '#fff', fontSize: 18 }}>
