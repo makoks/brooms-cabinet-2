@@ -24,6 +24,7 @@ export const ProfilePage = () => {
 
 		getProfile();
 	}, []);
+
 	return (
 		<Layout>
 			<ContentHeader title='Профиль' paddingBottom={true}>
@@ -37,6 +38,8 @@ export const ProfilePage = () => {
 					projectsAndGroups={profile.projectsAndGroups}
 					contacts={profile.contacts}
 					notifications={profile.notifications}
+					interests={profile.interests}
+					team={profile.team}
 				/>
 			}
 		</Layout>
