@@ -53,7 +53,7 @@ export const ShopPage = () => {
       <Layout.Content style={{ margin: '27px 34px' }}>
         <Row gutter={[10, 30]}>
           {filteredProducts.map(product => (
-            <ProductCard product={product} disabled={product.karma > shop.karma} />
+            <ProductCard product={product} disabled={product.karma > shop.karma || product.coins > shop.coins} />
           ))}
         </Row>
       </Layout.Content>

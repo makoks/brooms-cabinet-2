@@ -9,7 +9,7 @@ const Contact = ({title, value, color}) => {
 				<Badge color={color} text={`${title}: `} />
 			</Col>
 			<Col>
-				<Typography.Text style={{color: 'rgba(0, 0, 0, 0.45)'}}>{value}</Typography.Text>
+				<Typography.Text type="secondary">{value}</Typography.Text>
 			</Col>
 		</Row>
 	)

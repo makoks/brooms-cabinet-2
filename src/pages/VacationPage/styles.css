@@ -1,4 +1,4 @@
-.vacation__table .ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table {
+.vacation__table.vacation__table .ant-table.ant-table-bordered > .ant-table-container > .ant-table-content > table {
   border: none;
 }
 
@@ -8,13 +8,23 @@
   position: relative;
 }
 
-.vacation__table tr > th.ant-table-cell,
-.vacation__table tr > td.ant-table-cell {
+.vacation__table.vacation__table tr > th.ant-table-cell,
+.vacation__table.vacation__table tr > td.ant-table-cell {
   padding: 0;
   text-align: center;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.68);
+}
+
+.light-theme .vacation__table tr > th.ant-table-cell,
+.light-theme .vacation__table tr > td.ant-table-cell {
   background-color: #fff;
+  color: rgba(0, 0, 0, 0.68);
+}
+
+.dark-theme .vacation__table tr > th.ant-table-cell,
+.dark-theme .vacation__table tr > td.ant-table-cell {
+  background-color: #303030;
+  color: #ffffffd9;
 }
 
 .vacation__table tr > td.ant-table-cell:first-child {
@@ -39,16 +49,28 @@
   background-color: #f9f0ff;
   color: #7b61ff;
 }
+.dark-theme .vacation__table tr > th.ant-table-cell.weekend,
+.dark-theme .vacation__table tr > td.ant-table-cell.weekend {
+  background-color: #1a1325;
+}
 
-.vacation__table .ant-table-tbody > tr.ant-table-row:hover > td,
-.vacation__table .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+.vacation__table.vacation__table .ant-table-tbody > tr.ant-table-row:hover > td,
+.vacation__table.vacation__table .ant-table-tbody > tr > td.ant-table-cell-row-hover {
   background: none;
 }
 .vacation__table .ant-table-tbody > tr.ant-table-row:hover > td.weekend,
 .vacation__table .ant-table-tbody > tr > td.ant-table-cell-row-hover.wekend {
   background-color: #f9f0ff;
 }
+.dark-theme .vacation__table .ant-table-tbody > tr.ant-table-row:hover > td.weekend,
+.dark-theme .vacation__table .ant-table-tbody > tr > td.ant-table-cell-row-hover.wekend {
+  background-color: #1a1325 !important;
+}
 .vacation__table .ant-table-tbody > tr.ant-table-row:hover > td:first-child,
 .vacation__table .ant-table-tbody > tr > td.ant-table-cell-row-hover:first-child {
   background-color: #fff;
+}
+.dark-theme .vacation__table .ant-table-tbody > tr.ant-table-row:hover > td:first-child,
+.dark-theme .vacation__table .ant-table-tbody > tr > td.ant-table-cell-row-hover:first-child {
+  background-color: #303030;
 }

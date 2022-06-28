@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import { LoginPage, RubricsPage, ProfilePage, VacationPage, ShopPage } from './pages';
 import { Layout } from './components';
-import 'antd/dist/antd.css';
+import './light-and-dark-theme.css';
 import './App.css';
 
 function App() {

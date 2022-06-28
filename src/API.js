@@ -108,7 +108,7 @@ export const API = {
 					id: "4",
 					imageUrl: "https://picsum.photos/500/200?random=4",
 					title: "Толстовка Краба",
-					coins: 300,
+					coins: 500,
 					karma: 40,
 				},
 				{

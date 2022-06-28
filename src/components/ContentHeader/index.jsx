@@ -1,9 +1,10 @@
 import React from 'react';
 import { Layout, Space, Typography } from 'antd';
+import './styles.css';
 
 export const ContentHeader = ({ title, children, paddingBottom = undefined }) => (
   <Layout.Header
-    style={{ padding: `16px 24px ${paddingBottom ? '24px' : 0}`, backgroundColor: '#fff', height: 'auto' }}
+    style={{ padding: `16px 24px ${paddingBottom ? '24px' : 0}`, height: 'auto' }}
     className="content-header"
   >
     <Space direction="vertical" style={{ width: '100%' }}>
