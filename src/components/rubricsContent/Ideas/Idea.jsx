@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { List, Space, Typography, Tag, Avatar, Button, Divider, Tooltip, Input } from 'antd';
+import { List, Space, Typography, Tag, Avatar, Button, Divider, Input } from 'antd';
 import { StarOutlined, LikeOutlined, MessageOutlined } from '@ant-design/icons';
 import { Comment } from './Comment';
 
