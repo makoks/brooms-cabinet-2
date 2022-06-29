@@ -6,18 +6,18 @@ export const RegisterForm = ({ setActiveTab }) => (
     // onFinish={onFinish}
   >
     <Form.Item
-      name="username-register"
+      name="fio"
       rules={[
         {
           required: true,
-          message: 'Пожалуйста, введите Ваш логин!',
+          message: 'Пожалуйста, введите Ваши ФИО!',
         },
       ]}
     >
-      <Input placeholder="Логин" />
+      <Input placeholder="ФИО" />
     </Form.Item>
     <Form.Item
-      name="email"
+      name="email-register"
       rules={[
         {
           required: true,
